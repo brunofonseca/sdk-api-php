@@ -29,7 +29,7 @@ class Client extends GuzzleHttp\Client
             'https://apidoc.tagplus.com.br/authorize',
             // Parameters (query string)
             $client_id,
-            implode($scope, ' ')
+            implode(' ',$scope)
         );
 
         // redirect_uri is optional
